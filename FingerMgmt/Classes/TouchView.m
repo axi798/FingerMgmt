@@ -330,4 +330,36 @@ enum {
   glSwapAPPLE();
 }
 
+- (NSImage*) image
+{
+    NSBitmapImageRep* imageRep;
+    NSImage* image;
+    NSSize viewSize = [self bounds].size;
+    int width = viewSize.width;
+    int height = viewSize.height;
+    
+    [self lockFocus];
+    [self drawRect:[self bounds]];
+    [self unlockFocus];
+    
+    imageRep= [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL
+                                                      pixelsWide:width
+                                                      pixelsHigh:height
+                                                   bitsPerSample:8
+                                                 samplesPerPixel:4
+                                                        hasAlpha:YES
+                                                        isPlanar:NO
+                                                  colorSpaceName:NSDeviceRGBColorSpace
+                                                     bytesPerRow:width*4
+                                                    bitsPerPixel:32];
+    [[self openGLContext] makeCurrentContext];
+    glReadPixels(0,0,width,height,GL_RGBA,GL_UNSIGNED_BYTE,[imageRep bitmapData]);
+    image= [[NSImage alloc] initWithSize:NSMakeSize(width,height)];
+    [image addRepresentation:imageRep];
+    [image setFlipped:YES]; // this is deprecated in 10.6
+    [image lockFocusOnRepresentation:imageRep]; // this will flip the rep
+    [image unlockFocus];
+    return image;
+}
+
 @end

@@ -15,4 +15,5 @@
 @property (nonatomic, strong) NSArray *touchPoints;
 @property (nonatomic, strong) NSImage *mask;
 
+- (NSImage*) image;
 @end

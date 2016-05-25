@@ -17,7 +17,7 @@
 }
 
 + (GLTexture *)textureWithImage:(NSImage *)image {
-  GLTexture *texture = [GLTexture texture];
+    GLTexture *texture = [GLTexture textureWithSpecifier:GLTextureSpecifierMakeTexture2D(GL_TEXTURE_2D, image.size.width, image.size.height, GL_NUM_COMPRESSED_TEXTURE_FORMATS, GL_TEXTURE_ALPHA_TYPE)];
 
   if (![image isFlipped]) {
     NSImage *drawImage = [[NSImage alloc] initWithSize:image.size];
@@ -42,7 +42,7 @@
   NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithData:[image TIFFRepresentation]];
 
   [texture createHandle];
-  [texture bind:GL_TEXTURE_2D];
+  [texture bind];
   
   // Set proper unpacking row length for bitmap.
   glPixelStorei(GL_UNPACK_ROW_LENGTH, (GLint)[bitmap pixelsWide]);

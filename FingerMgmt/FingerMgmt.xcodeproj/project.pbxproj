@@ -23,23 +23,75 @@
 		A5BD4D6F167C0B1700658BE3 /* touchPoint.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A5BD4D69167BF8F500658BE3 /* touchPoint.fsh */; };
 		A5BD4D70167C0B1E00658BE3 /* touchPoint.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A5BD4D6A167BF8F500658BE3 /* touchPoint.vsh */; };
 		A5C08BFE167AC49B003ED945 /* MultitouchSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C08BFD167AC49B003ED945 /* MultitouchSupport.framework */; };
-		A5C4314816831837000EC677 /* CeedGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C4314716831837000EC677 /* CeedGL.framework */; };
-		A5C4314B168319D8000EC677 /* CeedGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5C4314716831837000EC677 /* CeedGL.framework */; };
 		A5F71D13167AA1D600FF0DF6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F71D12167AA1D600FF0DF6 /* Cocoa.framework */; };
+		E3E8D8EA1CE0D50900A0DD52 /* CeedGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E8D8D91CE0D4FF00A0DD52 /* CeedGL.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A5C4314A168319BC000EC677 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A5C4314B168319D8000EC677 /* CeedGL.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		E3E8D8D81CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 052BD757127ECB10005A3AE9;
+			remoteInfo = "CeedGL Mac Framework";
 		};
-/* End PBXCopyFilesBuildPhase section */
+		E3E8D8DA1CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 050DB7DD148909E300812267;
+			remoteInfo = CeedGL.mac;
+		};
+		E3E8D8DC1CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 050DB80714890EE300812267;
+			remoteInfo = CeedGL.ios;
+		};
+		E3E8D8DE1CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05D0FDF819892FFE00BB4812;
+			remoteInfo = CeedGL.CoreVideoExt.ios;
+		};
+		E3E8D8E01CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0558FE801B677C60000FBE32;
+			remoteInfo = CeedGL.GLKitExt.ios;
+		};
+		E3E8D8E21CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05BE5871128553040054FD91;
+			remoteInfo = CeedGLDemo.mac;
+		};
+		E3E8D8E41CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 050DB82E1489145800812267;
+			remoteInfo = CeedGLDemo.ios;
+		};
+		E3E8D8E61CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05B1C9151A989E82000E9317;
+			remoteInfo = "CeedGL-stub.ios";
+		};
+		E3E8D8E81CE0D4FF00A0DD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05F27A5D1B79E5C700E11DCF;
+			remoteInfo = "CeedGL-stub.mac";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A59258681680293F00A6AD67 /* effect.fsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = effect.fsh; sourceTree = "<group>"; };
@@ -73,6 +125,7 @@
 		A5F71D12167AA1D600FF0DF6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A5F71D15167AA1D600FF0DF6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A5F71D17167AA1D600FF0DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CeedGL.xcodeproj; path = "../../Downloads/CeedGL-master 2/CeedGL.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E8D8EA1CE0D50900A0DD52 /* CeedGL.framework in Frameworks */,
 				A5BD4D6E167C097100658BE3 /* OpenGL.framework in Frameworks */,
-				A5C4314816831837000EC677 /* CeedGL.framework in Frameworks */,
 				A5C08BFE167AC49B003ED945 /* MultitouchSupport.framework in Frameworks */,
 				A5F71D13167AA1D600FF0DF6 /* Cocoa.framework in Frameworks */,
 			);
@@ -127,6 +180,7 @@
 		A5F71D03167AA1D600FF0DF6 = {
 			isa = PBXGroup;
 			children = (
+				E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */,
 				A5F71D18167AA1D600FF0DF6 /* FingerMgmt */,
 				A5BD4D0B167BF2A000658BE3 /* KGNoise */,
 				A5F71D11167AA1D600FF0DF6 /* Frameworks */,
@@ -184,6 +238,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E3E8D8CD1CE0D4FE00A0DD52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3E8D8D91CE0D4FF00A0DD52 /* CeedGL.framework */,
+				E3E8D8DB1CE0D4FF00A0DD52 /* libCeedGL.mac.a */,
+				E3E8D8DD1CE0D4FF00A0DD52 /* libCeedGL.ios.a */,
+				E3E8D8DF1CE0D4FF00A0DD52 /* libCeedGL.CoreVideoExt.ios.a */,
+				E3E8D8E11CE0D4FF00A0DD52 /* libCeedGL.GLKitExt.ios.a */,
+				E3E8D8E31CE0D4FF00A0DD52 /* CeedGLDemo.mac.app */,
+				E3E8D8E51CE0D4FF00A0DD52 /* CeedGLDemo.ios.app */,
+				E3E8D8E71CE0D4FF00A0DD52 /* libCeedGL-stub.ios.a */,
+				E3E8D8E91CE0D4FF00A0DD52 /* libCeedGL-stub.mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,7 +264,6 @@
 				A5F71D0A167AA1D600FF0DF6 /* Sources */,
 				A5F71D0B167AA1D600FF0DF6 /* Frameworks */,
 				A5F71D0C167AA1D600FF0DF6 /* Resources */,
-				A5C4314A168319BC000EC677 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -224,12 +293,84 @@
 			mainGroup = A5F71D03167AA1D600FF0DF6;
 			productRefGroup = A5F71D0F167AA1D600FF0DF6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E3E8D8CD1CE0D4FE00A0DD52 /* Products */;
+					ProjectRef = E3E8D8CC1CE0D4FE00A0DD52 /* CeedGL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A5F71D0D167AA1D600FF0DF6 /* FingerMgmt */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E3E8D8D91CE0D4FF00A0DD52 /* CeedGL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CeedGL.framework;
+			remoteRef = E3E8D8D81CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8DB1CE0D4FF00A0DD52 /* libCeedGL.mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCeedGL.mac.a;
+			remoteRef = E3E8D8DA1CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8DD1CE0D4FF00A0DD52 /* libCeedGL.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCeedGL.ios.a;
+			remoteRef = E3E8D8DC1CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8DF1CE0D4FF00A0DD52 /* libCeedGL.CoreVideoExt.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCeedGL.CoreVideoExt.ios.a;
+			remoteRef = E3E8D8DE1CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8E11CE0D4FF00A0DD52 /* libCeedGL.GLKitExt.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCeedGL.GLKitExt.ios.a;
+			remoteRef = E3E8D8E01CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8E31CE0D4FF00A0DD52 /* CeedGLDemo.mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CeedGLDemo.mac.app;
+			remoteRef = E3E8D8E21CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8E51CE0D4FF00A0DD52 /* CeedGLDemo.ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CeedGLDemo.ios.app;
+			remoteRef = E3E8D8E41CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8E71CE0D4FF00A0DD52 /* libCeedGL-stub.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCeedGL-stub.ios.a";
+			remoteRef = E3E8D8E61CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3E8D8E91CE0D4FF00A0DD52 /* libCeedGL-stub.mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCeedGL-stub.mac.a";
+			remoteRef = E3E8D8E81CE0D4FF00A0DD52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A5F71D0C167AA1D600FF0DF6 /* Resources */ = {
@@ -331,6 +472,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(DSTROOT)/usr/local/include\"",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
@@ -351,6 +496,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(DSTROOT)/usr/local/include\"",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
